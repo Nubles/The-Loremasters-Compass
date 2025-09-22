@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map', {
-        // crs: L.CRS.Simple, // No longer needed for tile map
+        crs: L.CRS.Simple,
     }).setView([3222, 3215], -2); // Center on Lumbridge
 
     const tileUrl = 'https://mejrs.github.io/layers_rs3/map_squares/-1/{z}/0_{x}_{y}.png';
